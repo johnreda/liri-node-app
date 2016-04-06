@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST LIRI</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+<script type= "text/javascript">
+var spotify = require('spotify');
+
+
+spotify.search({ type: 'track', query: 'paranoid android' }, function(err, data) {
+    if ( err ) {
+        console.log('Error occurred: ' + err);
+        return;
+    }
+ 	console.log(data);
+    // Do something with 'data' 
+});
+
+</script>
